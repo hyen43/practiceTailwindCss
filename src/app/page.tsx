@@ -108,6 +108,31 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <div className=' flex justify-center justify-items-center items-center gap-5 w-full h-7'>
+        <div className='group/item flex-1 h-full bg-teal-300 rounded-lg text-center align-middle'>1
+          <div className='group/hoverItem invisible hover:bg-slate-200 group-hover/item:visible group'>
+            <span className='group-hover/hoverItem: text-gray-500'>hover</span>
+          </div>
+        </div>
+        <div className='group/item flex-1 h-full bg-cyan-400 rounded-lg text-center'>2
+        <div className='group/hoverItem invisible hover:bg-slate-200 group-hover/item:visible'>
+            <span className='group-hover/hoverItem: text-gray-500'>hover</span>
+        </div>
+        </div>
+        <div className='group/item flex-1 h-full bg-yellow-100 rounded-lg text-center'>3</div>
+        <div className='group/item flex-1 h-full bg-pink-100 rounded-lg text-center'>4</div>
+      </div>
+      <fieldset>
+        <legend>체크박스</legend>
+        <input id="lina1" className='peer/lina1' type='radio' name='status' checked defaultChecked/>
+        <label htmlFor='lina1' className="peer-checked/lina1:text-blue-600">리나1</label>
+        <input id="lina2" className='peer/lina2' type='radio' name='status'/>
+        <label htmlFor='lina2' className="peer-checked/lina2:text-blue-600">리나2</label>
+
+      </fieldset>
+      <button className="transition hover:scale-150 ease-in duration-[3000ms] bg-red-400 w-24 h-10">Button A</button>
+      <button className="transition hover:scale-150 ease-out duration-1000 bg-yellow-400 w-24 h-10">Button A</button>
+      <button className="transition hover:scale-150 ease-in-out duration-1000 bg-blue-400 w-24 h-10">Button A</button>
     </main>
   )
 }
